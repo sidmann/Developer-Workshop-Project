@@ -1,2 +1,2 @@
 # Developer-Workshop
-This repository is for practice mainly CSS.
+This repository is for practice HTML and CSS.
