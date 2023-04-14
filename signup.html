@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header"></div>
+      <center><h1 id="signupheader">Signup</h1></center>
+      <div class="content">
+        <form action="./signupsuccess.html">
+          <table align="center" cellpadding="10">
+            <!-- first name -->
+            <tr>
+              <td>FIRST NAME</td>
+              <td>
+                <input type="text" name="first_name" maxlength="30" />
+                <!-- max 30 character a - z and A - Z -->
+              </td>
+            </tr>
+            <!-- last Name -->
+            <tr>
+              <td>LAST NAME</td>
+              <td>
+                <input type="text" name="last_name" maxlength="30" />
+                <!-- max 30 character a - z and A - Z -->
+              </td>
+              <!-- tr>td+td>select>option*31 -->
+              <!-- Date of birth -->
+              <tr>
+                <td>DATE OF BIRTH</td>
+                <td>
+                    <select name="birthday" id="birthday">
+                        <option value="-1">Day:</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                    </select>
+
+                    <!-- select#birthday_month>option*13 -->
+                    <select name="birthday_month" id="birthday_month">
+                        <option value="-1">Month</option>
+                        <option value="January">Jan</option>
+                        <option value="February">Feb</option>
+                        <option value="March">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">Aug</option>
+                        <option value="September">Sept</option>
+                        <option value="October">Oct</option>
+                        <option value="Novemberber">Nov</option>
+                        <option value="December">Dec</option>
+                    </select>
+                    <!-- year -->
+                    <!-- select#birth_year>option*10 -->
+                   <select name="birth_year" id="birth_year">
+                    <option value="-1">year</option>
+                    <option value="2005">2005</option>
+                    <option value="2004">2004</option>
+                    <option value="2003">2003</option>
+                    <option value="2002">2002</option>
+                    <option value="2001">2001</option>
+                    <option value="2000">2000</option>
+                    <option value="1999">1999</option>
+                    <option value="1998">1998</option>
+                    <option value="1997">1997</option>
+                   </select>
+                </td>
+              </tr>
+            </tr>
+            <!-- email -->
+            <tr>
+                <td>EMAIL ID</td>
+                <td>
+                    <input type="text" name="email_id" maxlength="100">
+                </td>
+                <!-- mobile number -->
+                <tr>
+                    <td>MOBILE NUMBER</td>
+                    <td><input type="text" name="mobile_number" maxlength="10">(10 digit number)</td>
+                </tr>
+                <!-- gender -->
+                <tr>
+                    <td>GENDER</td>
+                    <td>Male<input type="radio" name="gender" value="Male"></input>
+                    Female<input type="radio" name="gender" value="Female"></input>
+                    </td>
+                </tr>
+                <!-- address -->
+                <!-- tr>td+td>textarea -->
+                <tr>
+                    <td>ADDRESS   <br>  <br>  <br>  <br></td>
+                    <td><textarea name="address" id="" cols="30" rows="4"></textarea></td>
+                </tr>
+                <!-- city -->
+                <!-- tr>td+td>input:t -->
+                <tr>
+                    <td>CITY</td>
+                    <td><input type="text" name="city" maxlength="30">
+                        (max 30 characters only)</td>
+                </tr>
+                <!-- pin code -->
+                <!-- tr>td+td>input:text -->
+                <tr>
+                    <td>PIN CODE</td>
+                    <td><input type="text" name="pin_code" maxlength="6">(6 digit number)</td>
+                </tr>
+                <!-- state -->
+                <tr>
+                    <td>STATE</td>
+                    <td><input type="text" name="state" maxlength="30">(max 30 characters only)</td>
+                </tr>
+                <!-- COUNTRY -->
+                <!-- tr>td+td>input:text -->
+                <tr>
+                    <td>COUNTRY</td>
+                    <td><input type="text" name="country" value="india" readonly></td>
+                </tr>
+                <!-- hobbies -->
+                <!-- tr>td+td>input:checkbox*6 -->
+                <tr>
+                    <td>HOBBIES <br>  <br>  <br></td>
+                    <td>      <input type="checkbox" name="hobby_drawing" id="">Drawing
+                        <input type="checkbox" name="hobby_singing" id="">Singing
+                        <input type="checkbox" name="hobby_dancing" id="">Dancing
+                        <input type="checkbox" name="hobby_cooking" id="">Cooking
+                        <input type="checkbox" name="hobby_playing" id="">Playing
+                        <input type="checkbox" name="hobby_others" id="">Others
+                        <input type="text" name="hobby_other" id="" maxlength="30"></td>
+                </tr>
+                <!-- qualification -->
+                <!-- tr>td>br*7+td>table>tr>td*5+tr>tr*2+td>input:text+input:text+td>input:text+tr>td*2+td>input:text+td>input:text+td>input:text+tr>td*3 -->
+                <!-- <tr>
+                    <td>
+                       QUALIFICATION <br><br><br><br><br><br><br>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td align="center">SI_NO</td>
+                                    <td align="center">Examination</td>
+                                    <td align="center">Board</td>
+                                    <td align="center">Percentage</td>
+                                    <td align="center">Year of Passing</td>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Class X</td>
+                                        <td> <input type="text" name="classXboard" maxlength="30" id=""> </td>
+                                           <td> <input type="text" name="" id=""> </td> 
+                                            <td>
+                                                <input type="text" name="classXpercentage" maxlength="30" id="">
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>
+                                                        <input type="text" name="" id="">
+                                                        <td>
+                                                            <input type="text" name="" id="">
+                                                            <td>
+                                                                <input type="text" name="" id="">
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                            </td>
+                                                        </td>
+                                                    </td>
+                                                </tr>
+                                            </td>
+                                        </td>
+                                    </tr>
+                                </tr>
+                            </table>
+                        </td>
+                    </td>
+                </tr> -->
+
+            </tr>
+          </table>
+        </form>
+      </div>
+      <center><div class="footer">©Developed by Sidhant Mann 2023</div></center>
+    </div>
+  </body>
+</html>

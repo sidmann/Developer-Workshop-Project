@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <center>
+          <h1 id="loginheading">Hi!</h1>
+        </center>
+        <center>
+          <h1 id="loginSubheading">Login</h1>
+        </center>
+      </div>
+      <div class="content">
+        <div class="contentdata">
+          <form action="./loginsucess.html">
+            <div class="imgcontainer">
+              <i class="fa-solid fa-user fa-6x"></i>
+            </div>
+            <div class="logincontainer">
+              <label for="uname"><b>Username</b></label>
+              <input
+                type="text"
+                placeholder="Enter Username"
+                name="uname"
+                required
+              />
+              <label for="pws"><b>Password</b></label>
+              <input
+                type="password"
+                placeholder="Enter password"
+                name="psw"
+                required
+              />
+              <button type="submit">Login</button>
+              <label>
+                <input
+                  type="checkbox"
+                  class="remember"
+                  checked
+                  name="remember"
+                  id=""
+                />Save for later
+              </label>
+            </div>
+            <div class="logincontainer">
+              <span class="psw"><a href="#">Forgot Password?</a></span>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer">© Lara Technologies 2023</div>
+    </div>
+  </body>
+</html>
